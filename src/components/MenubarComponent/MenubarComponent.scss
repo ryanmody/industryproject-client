@@ -1,0 +1,26 @@
+@use "../../styles/partials/variables.scss" as *;
+
+.menu-bar {
+    width: 100%;
+    height: 39px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: $menubar-navy;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: $white;
+    font-size: 14px;
+    line-height: 12px;
+
+    &__container {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    &__stack {
+        background-image: url('../../assets/icons/hamburger.png');
+        height: 17px;
+        width: 32px;
+    }
+}
