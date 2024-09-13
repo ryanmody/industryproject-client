@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './AddReviewAIComponent.scss';
 
 const AddReviewAIComponent = () => {
@@ -6,6 +7,7 @@ const AddReviewAIComponent = () => {
   const [showSuggestionBox, setShowSuggestionBox] = useState(false);
   const [isFadingOut, setIsFadingOut] = useState(false); // State to handle fade-out animation
   const textareaRef = useRef(null); // Reference to the textarea content
+  const navigate = useNavigate(); 
 
   const handleEnhanceClick = () => {
     setLoading(true); 
@@ -30,6 +32,9 @@ const AddReviewAIComponent = () => {
       setIsFadingOut(false); // Resets fade-out state for next time
     }, 400); // Duration needs to match the transition time in SCSS
   };
+  const handleSubmitClick = () => {
+    navigate('/review-submitted'); 
+  };
 
   return (
     <div className="write-review">
@@ -48,18 +53,27 @@ const AddReviewAIComponent = () => {
         <div className="write-review__tag">Looks exactly like the pictures</div>
         <div className="write-review__tag">Works great</div>
       </div> */}
+      <div className="write-review__button">
+        <button
+          className="write-review__enhance"
+          type="button"
+          onClick={handleEnhanceClick}
+        >
+          {loading ? (
+            <div className="spinner"></div>
+          ) : (
+            'Enhance'
+          )}
+        </button>
 
-      <button
-        className="write-review__enhance"
-        type="button"
-        onClick={handleEnhanceClick}
-      >
-        {loading ? (
-          <div className="spinner"></div>
-        ) : (
-          'Enhance'
-        )}
-      </button>
+        <button
+          className="write-review__submit"
+          type="button"
+          onClick={handleSubmitClick} 
+        >
+          Submit
+        </button>
+      </div>
 
       {/* Suggestion box always rendered bc apparently it affects fading animations */}
       <div
