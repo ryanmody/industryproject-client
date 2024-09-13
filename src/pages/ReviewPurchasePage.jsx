@@ -10,9 +10,7 @@ const ReviewPurchasePage = () => {
         <HeaderComponent />
         <MenubarComponent />
       </header>
-      <main>
-
-      </main>
+     
       <footer>
         <FooterComponent />
       </footer>
