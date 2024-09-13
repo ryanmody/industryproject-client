@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import ReviewPurchasePage from './pages/ReviewPurchasePage'
+import ReviewSubmitPage from './pages/ReviewSubmitPage'
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<ReviewPurchasePage />} />
-        <Route/>
+        <Route path="/review-submitted" element={<ReviewSubmitPage />} />
         <Route/>
       </Routes>  
     

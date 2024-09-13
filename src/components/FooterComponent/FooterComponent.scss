@@ -58,10 +58,11 @@ h3{
             width: 8rem;
             height: auto;
             margin: 2rem;
-
+            margin-top: 3rem;
         }
         &-english{
             @extend .footer__logo-image;
+          
         }
     }
     &__country{
