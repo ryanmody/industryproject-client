@@ -14,18 +14,20 @@ const CreateReviewComponent = () => {
       </div>
       <hr className="create-review__divider"></hr>
 
-      <h3 className="overall-rating">Overall rating</h3>
+      <h3 className="create-review__rating">Overall rating</h3>
       <hr className="create-review__divider"></hr>
 
-      <h3 className="overall-rating">Add a headline</h3>
+      <h3 className="create-review__headline">Add a headline</h3>
       <hr className="create-review__divider"></hr>
 
-      <h3 className="overall-rating">Add a photo or video</h3>
-      <h4 className="overall-rating">Shoppers find images and videos more helpful than text alone</h4>
+      <h3 className="create-review__photo">Add a photo or video</h3>
+      <h4 className="create-review__subtext">Shoppers find images and videos more helpful than text alone</h4>
       <hr className="create-review__divider"></hr>
 
-      <h3 className="overall-rating">Add a written review</h3>
+      <h3 className="overall-rating__review">Add a written review</h3>
       <hr className="create-review__divider"></hr>
+      
+      <textarea></textarea>
     </div>
   );
 };
