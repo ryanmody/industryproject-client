@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './AddReviewAIComponent.scss';
 
 const AddReviewAIComponent = () => {
@@ -6,6 +7,7 @@ const AddReviewAIComponent = () => {
   const [showSuggestionBox, setShowSuggestionBox] = useState(false);
   const [isFadingOut, setIsFadingOut] = useState(false); // State to handle fade-out animation
   const textareaRef = useRef(null); // Reference to the textarea content
+  const navigate = useNavigate(); 
 
   const handleEnhanceClick = () => {
     setLoading(true); 
@@ -29,6 +31,9 @@ const AddReviewAIComponent = () => {
       setShowSuggestionBox(false); 
       setIsFadingOut(false); // Resets fade-out state for next time
     }, 400); // Duration needs to match the transition time in SCSS
+  };
+  const handleSubmitClick = () => {
+    navigate('/review-submitted'); 
   };
 
   return (

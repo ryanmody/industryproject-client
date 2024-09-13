@@ -1,3 +1,5 @@
+@use "../../styles/partials/variables.scss" as *;
+
 .write-review {
   position: relative; // Ensure that the suggestion-box is positioned relative to this container
   margin-top: 1rem;
@@ -85,8 +87,24 @@
       animation: spin 1s linear infinite;
     }
   }
-}
+  &__submit{
+    display: inline-flex;
+    padding: 7px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 0.5rem;
+    border-width: 1px;
+    border-radius: 40px;
+    background: var(--www-amazon-in-blue, $mid-blue);
+    color: white;
 
+  }
+}
+.write-review__button{
+  display: flex;
+  justify-content: space-between;
+}
 // Add keyframe animation for the spinner
 @keyframes spin {
   0% {
