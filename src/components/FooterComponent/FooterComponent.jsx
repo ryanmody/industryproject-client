@@ -7,7 +7,7 @@ const FooterComponent = () => {
     return (
         <div className="footer">
             <div className="footer__navigate">
-                <h4> Back to top </h4>
+                <h3> Back to top </h3>
             </div>
             <div className="footer__main">
                 <div className="footer__main-know">
