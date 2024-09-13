@@ -53,10 +53,12 @@ h3{
         flex-wrap: nowrap;
         justify-content: center;
         background-color: $mid-blue;
+        border-top: 1px solid rgba(128, 128, 128, 0.5);
         &-image{
-            width: 20%;
+            width: 8rem;
             height: auto;
             margin: 2rem;
+
         }
         &-english{
             @extend .footer__logo-image;
