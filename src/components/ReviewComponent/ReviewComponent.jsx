@@ -14,11 +14,11 @@ const ReviewComponent = () => {
             <div className="review__rating">
                 <h2>Overall rating</h2>
                 <div className="review__rating-star">
-                    <img className="review__rating-star1" src={star} alt="star" />
-                    <img className="review__rating-star2" src={star} alt="star" />
-                    <img className="review__rating-star3" src={star} alt="star" />
-                    <img className="review__rating-star4" src={star} alt="star" />
-                    <img className="review__rating-star5" src={star} alt="star" />
+                    <img className="review__rating-star-1" src={star} alt="star" />
+                    <img className="review__rating-star-2" src={star} alt="star" />
+                    <img className="review__rating-star-3" src={star} alt="star" />
+                    <img className="review__rating-star-4" src={star} alt="star" />
+                    <img className="review__rating-star-5" src={star} alt="star" />
                 </div>
             </div>
             <div className="review__headline">
