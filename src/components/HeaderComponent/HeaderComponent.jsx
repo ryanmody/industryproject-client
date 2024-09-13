@@ -22,10 +22,21 @@ const HeaderComponent = () => {
             <div className='header-bar__searchtextbar'></div>
             <div className='header-bar__searchicon'></div>
         </div>
-        <div className='header-bar__country'></div>
-        <div className='header-bar__signin'></div>
-        <div className='header-bar__orders'></div>
-        <div className='header-bar__cart'></div>
+        <div className='header-bar__country'>
+            <div className='header-bar__flag'></div>
+            <div className='header-bar__language'>EN</div>
+        </div>
+        <div className='header-bar__signin'>
+            <div className='header-bar__recipient'>Hello, John</div>
+            <div className='header-bar__postalcode'>Accounts & Lists</div>
+        </div>
+        <div className='header-bar__orders'>
+            <div className='header-bar__recipient'>Returns</div>
+            <div className='header-bar__postalcode'>& Orders</div>
+        </div>
+        <div className='header-bar__cart'>
+            <div className='header-bar__cart-image'></div>
+        </div>
         
 
 

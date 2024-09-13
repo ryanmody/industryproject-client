@@ -6,7 +6,9 @@
   height: 69px;
   flex-shrink: 0;
   padding-left: 20px;
+  padding-right: 20px;
   display: flex;
+  justify-content: space-between;
   gap: 1rem;
   color: $white;
 
@@ -50,7 +52,7 @@
     color: $white;
     font-size: 14px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: normal;
   }
 
@@ -103,8 +105,56 @@
     height: 34px;
     flex-shrink: 0;
     background-color: #f6c461;
-    background-image: url('../../assets/icons/search.png');
+    background-image: url("../../assets/icons/search.png");
     background-repeat: no-repeat;
     background-position: 50%;
+  }
+
+  //Language
+  &__country {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__flag {
+    background-image: url("../../assets/icons/canadianflag.svg");
+    width: 26px;
+    height: 19px;
+  }
+
+  &__language {
+    font-weight: 600;
+  }
+
+  //Sign in
+  &__signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  //Orders and returns
+  &__orders {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  //Cart
+  &__cart {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-top: 0.25rem;
+    
+    &-image {
+      background-image: url("../../assets/icons/cart.png");
+      height: 60px;
+      width: auto;
+      aspect-ratio: 16 / 9;
+      background-repeat: no-repeat;
+    }
   }
 }
