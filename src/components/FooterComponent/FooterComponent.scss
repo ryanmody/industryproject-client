@@ -1,0 +1,97 @@
+@use "../../styles/partials/variables.scss" as *;
+p{
+    color: white;
+    margin: 0.5rem;
+}
+h4{
+    color: white;
+}
+.footer{
+    &__navigate{
+        text-align: center; 
+        background-color: $light-blue;
+        padding: 1rem;
+    }
+    &__main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: center;
+        background-color: $mid-blue;
+        &-know{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            margin: 2rem;
+            &-title{
+                font-weight: bold;
+            }
+        }
+        &-connect{
+            @extend .footer__main-know;
+            &-title{
+                font-weight: bold;
+            }
+        }
+        &-money{
+            @extend .footer__main-know;
+            &-title{
+                font-weight: bold;
+            }
+        }
+        &-help{
+            @extend .footer__main-know;
+            &-title{
+                font-weight: bold;
+            }
+        }
+    }
+    &__logo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        background-color: $mid-blue;
+        &-image{
+            width: 20%;
+            height: auto;
+            margin: 2rem;
+        }
+        &-english{
+            @extend .footer__logo-image;
+        }
+    }
+    &__country{
+        background-color: $mid-blue;
+        &-secondary{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center;
+            margin: auto 6rem;
+        }
+        &-primary{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__copyright{
+        background-color: $dark-blue;
+        &-selection{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        &-detail{
+            text-align: center; 
+        }
+    }
+
+}
