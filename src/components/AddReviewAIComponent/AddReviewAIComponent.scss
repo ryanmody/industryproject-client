@@ -1,7 +1,8 @@
 .write-review {
-  margin-left: 256px;
-  margin-right: 256px;
+  position: relative; // Ensure that the suggestion-box is positioned relative to this container
   margin-top: 1rem;
+  width: 70%;
+  margin: 2rem auto;
 
   &__title {
     color: #000;
@@ -15,6 +16,7 @@
 
   &__form {
     height: 100px;
+    position: relative; // Ensure the suggestion-box can be positioned relative to the form
   }
 
   &__textarea {
@@ -100,8 +102,8 @@
   flex-direction: column;
   justify-content: space-around;
   position: absolute;
-  top: 1rem;
-  right: 0;
+  top: 5%; /* Position below the textarea */
+  right: 2%;
   max-width: 250px;
   height: 140px;
   padding-left: 0.5rem;
@@ -116,8 +118,8 @@
 
   &--visible {
     opacity: 1;
-    transform: translateY(0); /* Move to the final position */
-    pointer-events: all; /* Enable interactions when visible */
+    transform: translateY(0); /* Move to the final position of animation */
+    pointer-events: all; /* Also need to enable interactions when visible */
   }
   
   &--hidden {

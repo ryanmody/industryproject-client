@@ -3,14 +3,14 @@ p{
     color: white;
     margin: 0.5rem;
 }
-h4{
+h3{
     color: white;
 }
 .footer{
     &__navigate{
         text-align: center; 
         background-color: $light-blue;
-        padding: 1rem;
+        padding: 0.5rem;
     }
     &__main{
         display: flex;
