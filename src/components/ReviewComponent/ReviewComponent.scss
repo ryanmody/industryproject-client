@@ -11,13 +11,13 @@ h2{
     width: 70%;
     margin: 2rem auto;
     &__product-sample{
-        margin: 2rem 1rem;
+        margin: 2rem 0rem;
         width: 60vw;
     }
     &__rating{
         border-top: 1px solid rgba(128, 128, 128, 0.5);
         border-bottom: 1px solid rgba(128, 128, 128, 0.5);
-        padding: 2rem 1rem;
+        padding: 2rem 0rem;
         &-star{
             display: flex;
             flex-direction: row;
@@ -42,7 +42,7 @@ h2{
         }
     }
     &__headline{
-        padding: 2rem 1rem;
+        padding: 2rem 0rem;
         &-textarea{
             margin-top: 1rem;
             height: 2rem;
@@ -59,7 +59,7 @@ h2{
         }
     }
     &__photo{
-        padding: 1rem 1rem;
+        padding: 1rem 0rem;
         border-top: 1px solid rgba(128, 128, 128, 0.5);
         border-bottom: 1px solid rgba(128, 128, 128, 0.5);
         &-paragragh{
