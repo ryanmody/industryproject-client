@@ -1,0 +1,25 @@
+.submitbutton {
+
+    &__submit {
+        display: inline-flex;
+        margin-top: 4rem;
+        margin-left: 80%;
+        margin-bottom: 4rem;
+        padding: 7px 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-top: 0.5rem;
+        border-width: 1px;
+        border-radius: 40px;
+        background: var(--www-amazon-in-gold, #fcd200);
+        color: #000;
+    
+        /* Body Large */
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+  }

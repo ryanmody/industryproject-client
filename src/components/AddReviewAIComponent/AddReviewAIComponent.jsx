@@ -38,7 +38,7 @@ const AddReviewAIComponent = () => {
       <form className="write-review__form">
         <textarea
           className="write-review__textarea"
-          placeholder="What did you like or dislike? What did you use this product for?"
+          placeholder="Talk about how this product has impacted you!"
           ref={textareaRef} // Attach the ref to the textarea content so that it can update dynamically
         />
       </form>
@@ -48,6 +48,7 @@ const AddReviewAIComponent = () => {
         <div className="write-review__tag">Looks exactly like the pictures</div>
         <div className="write-review__tag">Works great</div>
       </div> */}
+
 
       <button
         className="write-review__enhance"
@@ -60,6 +61,7 @@ const AddReviewAIComponent = () => {
           'Enhance'
         )}
       </button>
+
 
       {/* Suggestion box always rendered bc apparently it affects fading animations */}
       <div
@@ -81,6 +83,9 @@ const AddReviewAIComponent = () => {
         </div>
       </div>
     </div>
+
+
+    
   );
 };
 
