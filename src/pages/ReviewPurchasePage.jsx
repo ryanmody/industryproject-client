@@ -1,12 +1,20 @@
 import React from "react";
 import MenubarComponent from "../components/MenubarComponent/MenubarComponent";
 import HeaderComponent from "../components/HeaderComponent/HeaderComponent";
+import FooterComponent from "../components/FooterComponent/FooterComponent";
 
 const ReviewPurchasePage = () => {
   return (
     <>
-      <HeaderComponent />
-      <MenubarComponent />
+      <header>
+        <HeaderComponent />
+        <MenubarComponent />
+      </header>
+     
+      <footer>
+        <FooterComponent />
+      </footer>
+
     </>
   );
 };
