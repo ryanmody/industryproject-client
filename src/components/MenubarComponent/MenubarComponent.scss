@@ -15,11 +15,21 @@
 
     &__container {
         display: flex;
+        align-items: center;
         gap: 0.5rem;
     }
 
     &__stack {
+        background-image: url('../../assets/icons/hamburgersmall.png');
+        background-repeat: no-repeat;
         height: 17px;
-        width: 32px;
+        width: 17px;
+    }
+
+    &__item {
+
+        &--bold {
+            font-weight: 700;
+        }
     }
 }
