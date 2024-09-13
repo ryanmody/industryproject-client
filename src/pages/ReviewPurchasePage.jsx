@@ -1,10 +1,14 @@
-import React from 'react'
-import MenubarComponent from '../components/MenubarComponent/MenubarComponent'
+import React from "react";
+import MenubarComponent from "../components/MenubarComponent/MenubarComponent";
+import HeaderComponent from "../components/HeaderComponent/HeaderComponent";
 
 const ReviewPurchasePage = () => {
   return (
-    <MenubarComponent/>
-  )
-}
+    <>
+      <HeaderComponent />
+      <MenubarComponent />
+    </>
+  );
+};
 
-export default ReviewPurchasePage
+export default ReviewPurchasePage;
